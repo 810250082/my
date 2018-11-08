@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>upload_file</title>
+</head>
+<body>
+    <form method="post" action="/upload" enctype="multipart/form-data">
+        <p>
+            <input type="file" name="myPic"/>
+        </p>
+        <p>
+            <input type="submit" value="upload"/>
+        </p>
+    </form>
+    {% if fileUrl %}
+        <div>
+            picture : <img src="{{fileUrl}}"/>
+        </div>
+    {% endif%}
+</body>
+</html>

@@ -1,0 +1,16 @@
+HOSTNAME = '127.0.0.1'
+PORT = '3306'
+DEFAULT_DATABASE = 'my_migrate_db'
+MY_DOM_DATABASE = 'my_dom'
+USERNAME = 'root'
+PASSWORD = 'root'
+db_url_prefix = 'mysql+pymysql://{}:{}@{}:{}/'.format(USERNAME,PASSWORD,HOSTNAME,PORT)
+DEFAULT_DB_URI = db_url_prefix + DEFAULT_DATABASE
+MY_DOM_DB_URI = db_url_prefix + MY_DOM_DATABASE
+
+
+SQLALCHEMY_DATABASE_URI = DEFAULT_DB_URI
+SQLALCHEMY_TRACK_MODIFICATIONS = False
+SQLALCHEMY_BINDS = {
+    'my_dom': MY_DOM_DB_URI,
+}
