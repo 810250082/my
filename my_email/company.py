@@ -23,9 +23,9 @@ def _format_addr(s):
 # from_addr = 'm1******0@163.com'
 # password = "******"
 #     MAIL_USERNAME = 'redmine@taolesoft.com'     # 发件人邮箱
-#     MAIL_PASSWORD = 'Suibo2017'
+#     MAIL_PASSWORD = 'S******7'
 from_addr = 'redmine@taolesoft.com'
-password = "Suibo2017"
+password = "S******7"
 to_addr = '8******2@qq.com,shitou0329@taolesoft.com'
 to_addr_list = ['8******2@qq.com', 'shitou0329@taolesoft.com']
 
